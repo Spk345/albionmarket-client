@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install -y build-essential gcc-mingw-w64-x86-64
+sudo apt-get install -y build-essential mingw-w64
 go get -u github.com/golang/dep/cmd/dep
 dep ensure
 
