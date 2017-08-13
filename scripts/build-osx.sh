@@ -6,4 +6,4 @@ dep ensure
 
 export GOOS=darwin
 export GOARCH=amd64
-go build -o albionmarket-client -v -x cmd/albionmarket-client/albionmarket-client.go
+go build cmd/albionmarket-client/albionmarket-client.go
