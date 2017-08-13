@@ -12,3 +12,6 @@ validate-fmt:
 
 build-windows:
 	scripts/build-windows.sh
+
+build-windows:
+	scripts/build-osx.sh
