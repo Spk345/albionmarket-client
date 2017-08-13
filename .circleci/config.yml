@@ -28,6 +28,12 @@ jobs:
     steps:
       - checkout
       - run: make build-osx
+      - store_artifacts:
+          path: /go/src/github.com/regner/albionmarket-client/albionmarket-client
+      - persist_to_workspace:
+          root: /go/src/github.com/regner/albionmarket-client
+          paths:
+            - albionmarket-client
   deploy:
     working_directory: /tmp/workspace
     docker:
