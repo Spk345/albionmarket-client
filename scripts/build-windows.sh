@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+sudo apt-get install -y build-essential mingw-w64
+go get -u github.com/golang/dep/cmd/dep
+dep ensure
+
 export CGO_CPPFLAGS="-I $GOPATH/src/github.com/regner/albionmarket-client/thirdparty/WpdPack/Include/"
 export CGO_LDFLAGS="-L $GOPATH/src/github.com/regner/albionmarket-client/thirdparty/WpdPack/Lib/x64/"
 export GOOS=windows
