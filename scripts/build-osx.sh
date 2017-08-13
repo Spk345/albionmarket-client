@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install -y build-essential
+sudo apt-get install -y build-essential libpcap-dev
 go get -u github.com/golang/dep/cmd/dep
 dep ensure
 
